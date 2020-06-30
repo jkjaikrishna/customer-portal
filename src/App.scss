@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300");
+
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input, button {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1.3px;
+}
+
+input {
+  box-sizing: border-box;
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #626571;
+  color: #ccced3;
+  padding: 12px 6px 12px 36px;
+  font-size: 19px;
+  outline: none;
+  caret-color: #e55b8d;
+}
+
+input:focus {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(140deg, #db6241 0%, #e55b8d 100%);
+  border-image-slice: 1;
+}
+
+input:focus + i {
+  color: #ccced3;
+}
+
+::placeholder {
+  color: #ccced3;
+  opacity: 0.4;
+}
+
+i {
+  color: #626571;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+
+button {
+  background: #33343b;
+  border: none;
+  border-radius: 30px;
+  color: #ccced3;
+  font-size: 16px;
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.65);
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #3f4048;
+  box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.65);
+}
+
+.add-user {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 620px) {
+  .App {
+    min-height: 300px;
+    max-height: 420px;
+    width: 90vw;
+  }
+
+  .input-container {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+}

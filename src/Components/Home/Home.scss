@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,800");
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Nunito, sans-serif;
+    background: linear-gradient(to bottom right, #f5f2fd, #bfcbda);
+
+    .columns:last-child {
+        margin-bottom: -.75rem;
+        margin-left: -.75rem;
+        margin-right: -.75rem;
+        margin-top: -.75rem;
+        .column {
+            display: block;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            /* -webkit-box-flex: 1; */
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            padding: .75rem;
+            .menu {
+                height: 100%;
+                background: linear-gradient(to bottom right, #f8a3a4, #e2587c);
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+                .menu-list {
+                    line-height: 1.25;
+                    .menu-list__profile {
+                        padding: 4rem 3rem;
+                    }
+                    .menu-list__profile .image {
+                        height: 80px;
+                        width: 80px;
+                    }
+                    .menu-list__profile .image img {
+                        border-radius: 50px;
+                    }
+                    .menu-list__profile .subtitle {
+                        padding-top: 0.8rem;
+                    }
+                    .menu-list__main {
+                        width: 70%;
+                        margin: 0 auto;
+                        li {
+                            padding: 0.5rem 0;
+                            span{
+                                width: 35px;
+                                font-size: 1.3rem;
+                                padding-right: 0.9rem;
+                            }
+                        }
+                        a {
+                            color: #fff;
+                            display: inline-flex;
+                            align-items: center;
+                            letter-spacing: 0.1rem;
+                            font-weight: 800;
+                            opacity: 0.6;
+                        }
+                        a.active {
+                            opacity: 1;
+                        }
+                        a:hover {
+                            background-color: inherit;
+                            color: #fff;
+                            opacity: 1;
+                        }
+                    }
+                    .menu-list__outlier {
+                        margin-top: 10rem;
+                    }
+                  }
+            }
+            .dashboard {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(to bottom right, #f9fafb, #dfe4eb);
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                .dashboard__content {
+                    height: 100%;
+                    width: 80%;
+                    margin: 0 auto;
+                    .header {
+                        display: block;
+                        height: 100px;
+                        margin-top: 3rem;
+                    }
+                    .row {
+                        margin: 1rem 0;
+                      }
+                }
+                .title {
+                    color: #363636;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 1.125;
+                }
+                .title.is-5 {
+                    font-size: 1.25rem;
+                }
+                .content {
+                    padding-top: 1rem;
+                }
+              }
+        }
+    }
+    .columns.is-gapless>.column {
+        margin: 0;
+        padding: 0!important;
+    }
+}
